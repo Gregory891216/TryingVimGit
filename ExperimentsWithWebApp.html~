@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
-	<script src="scripts/jquery-1.12.3.min.js"></script>
-	<script src="scripts/bootstrap.min.js"></script>
 
 	<title>Experimenting with Web Application</title>
     </head>
@@ -18,14 +17,40 @@
 	<div id="contents" class="tab-content">
 	    <div class="tab-pane active" id="My-Table">
 		<p>My Table</p>
+	    	<table class="Mytable">
+		    <thead>
+			<tr>
+			    <th>Content1</th>
+			    <th>Content2</th>
+			</tr>
+		    </thead>
+		    <tbody>
+			<tr>
+			    <td>apple</td>
+			    <td>ball</td>
+			 </tr>
+		    </tbody>
+		</table>
 	    </div>
 	    <div class="tab-pane" id="My-Charts">
 		<p>My Charts</p>
 	    </div>
 	    <div class="tab-pane" id="Others">
 		<p>Others</p>
+		<div>
+		    <ul class ="shoesNav"></ul>
+    		    <script id="shoe-template" type="x-handlebars-template">
+			{{#each this}}
+			    <li class="shoes"><p href="/{{name}}">{{name}} -- Price: {{price}} </p></li>
+			{{/each}}
+    		    </script>
+		</div>
 	    </div>  
 	</div>
+	<script src="scripts/jquery-1.12.3.min.js"></script>
+	<script src="scripts/handlebars-v4.0.5.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+	<script src="scripts/main.js"></script>
     </body>
 
 </html>

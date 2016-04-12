@@ -11,19 +11,24 @@ table, th, td{
     text-align: center;
 }
 
-li{
+.nav li{
     display: inline;
 }
 
-li a{
-    padding: 0 10px;
-    text-align: center;
+ a{
 }
 
-a{
+.nav a{
     color: black;
     background: #fe5; 
     font-weight: bold;
+    padding: 0 10px;
+    text-align: center;
+
+}
+
+.nav-tabs>li>a {
+    border-style: none;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus { 

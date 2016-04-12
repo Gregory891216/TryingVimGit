@@ -11,7 +11,7 @@ var items = (function () {
     $.ajax({
         'async': false,
         'global': false,
-        'url': "./SomeData.json",
+        'url': "/SomeData.json",
         'dataType': "json",
         'success': function (data) {
             items = data;

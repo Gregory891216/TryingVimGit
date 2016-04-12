@@ -1,0 +1,7 @@
+{
+    [
+	{"brand":"Nike", "price":"400"},
+	{"brand":"Adidas", "price":"350"},
+	{"brand":"Puma", "price":"300"}
+    ]
+}
